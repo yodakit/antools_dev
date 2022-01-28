@@ -1,3 +1,4 @@
+@import 'base/variables';
 /* Указываем box sizing */
 *,
 *::before,
@@ -26,10 +27,11 @@ li {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  background-color: #283036;
+  background-color: $mainDark;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и Ol, у которых есть атрибут class*/
@@ -44,7 +46,22 @@ img {
   display: block;
 }
 
-@import 'base/variables';
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1274px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+@import 'blocks/menu';
+@import 'blocks/logo';
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/form';
+@import 'blocks/header';
 @import 'base/media';
 
 
