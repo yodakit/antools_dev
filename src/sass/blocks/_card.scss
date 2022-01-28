@@ -1,0 +1,87 @@
+.card {
+    width: 392px;
+    min-height: 294px;
+    padding: 33px;
+    border-radius: 15px;
+    &__header {
+        display: flex;
+    }
+    &__img {
+        opacity: 0.78;
+        margin-right: 30px;
+    }
+    &__title {
+        color: $mainSemiWhite;
+        font-weight: 500;
+        font-size: 1.5rem;
+        &_figma {
+            text-transform: uppercase;
+        }
+    }
+    &__price {
+        margin-top: 3px;
+        color: $colorPrice;
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    &__descr {
+        font-weight: 400;
+        margin-top: 30px;
+        color: $mainSemiDark;
+        font-size: 1rem;
+        line-height: 1.875em;
+    }
+    &__footer {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 0 7px;
+    }
+    &__icon {
+        display: flex;
+        font-size: 1.3rem;
+    }
+    &__like {
+        margin-right: 23px;
+    }
+    &__like::before, &__file::before {
+        color: $mainSemiDark;
+        cursor: pointer;
+    }
+}
+
+.card:hover {
+    background: rgba(40, 48, 54, 0.6);
+    backdrop-filter: blur(50px);
+    border: 1px solid #2E343A;
+    
+}
+.card:hover .card__img {
+    opacity: 1;
+}
+.card:hover .card__title {
+    color: $mainWhite;
+}
+.card:hover .card__price {
+    color: $colorActivePrice;
+}
+.card:hover .card__descr {
+    color: $mainSemiWhite;
+}
+.card:hover .card__like::before {
+    color: $mainSemiWhite;
+}
+.card:hover .card__file::before {
+    color: $mainSemiWhite;
+}
+.card:hover .btn__card {
+    background-color: $mainOrange;
+    color: white;
+}
+.card:hover .btn__card:hover {
+    background-color: rgba(40, 48, 54, 0.6);
+    border: 0.5px solid $mainOrange;
+    color: $mainOrange;
+    transition: 0.3s;
+}

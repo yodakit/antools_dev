@@ -1,0 +1,23 @@
+.tools {
+    padding-top: 200px;
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 1.38em;
+    }
+    &__cards {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__card {
+        margin-bottom: 100px;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}
