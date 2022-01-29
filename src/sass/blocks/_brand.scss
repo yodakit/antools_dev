@@ -1,0 +1,23 @@
+.brand {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    &__content {
+        width: 100%;
+        min-height: 253px;
+        border-radius: 25px;
+        background: rgba(44, 53, 61, 0.2);
+        padding: 55px 82px;
+    }
+    &__title {
+        font-weight: 500;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.5rem;
+    }
+    &__wrapper {
+        margin-top: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

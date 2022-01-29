@@ -54,6 +54,22 @@
             margin-bottom: 70px;
         }
     }
+    .brand {
+        padding-top: 130px;
+        &__content {
+            padding: 40px 60px;
+            min-height: 220px;
+        }
+        &__title {
+            font-size: 1.4rem;
+        }
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__icon {
+            width: 160px;
+        }
+    }
 }
 
 
@@ -150,6 +166,22 @@
         }
         &__descr {
             font-size: 0.8rem;
+        }
+    }
+    .brand {
+        padding-top: 80px;
+        &__content {
+            padding: 20px 30px;
+            min-height: 150px;
+        }
+        &__title {
+            font-size: 1.4rem;
+        }
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__icon {
+            width: 140px;
         }
     }
 }
@@ -279,6 +311,23 @@
             font-size: 1rem;
         }
     }
+    .brand {
+        padding-top: 60px;
+        &__content {
+            padding: 15px 10px;
+            min-height: 100px;
+        }
+        &__title {
+            font-size: 1.2rem;
+        }
+        &__wrapper {
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        &__icon {
+            width: 120px;
+        }
+    }
 }
 
 
@@ -327,5 +376,22 @@
     .card {
         width: 300px;
         min-height: 150px;
+    }
+    .brand {
+        padding-top: 40px;
+        &__content {
+            padding: 15px 10px 5px 10px;
+            min-height: 100px;
+        }
+        &__title {
+            font-size: 1rem;
+        }
+        &__wrapper {
+            margin-top: 10px;
+            justify-content: space-around;
+        }
+        &__icon {
+            margin-bottom: 10px;
+        }
     }
 }
