@@ -1,0 +1,25 @@
+.new-tools {
+    padding-top: 200px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        width: 34%;
+    }
+    &__title {
+
+    }
+    &__subtitle {
+        margin-top: 1.6em;
+    }
+    &__btn {
+        margin-top: 60px;
+    }
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 48%;
+    }
+}
