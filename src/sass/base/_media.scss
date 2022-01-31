@@ -104,6 +104,22 @@
             width: 90%;
         }
     }
+    .form-search {
+        &_big {
+            max-width: 500px;
+        }
+        &__input {
+            &_big {
+                padding: 21px 140px 21px 24px;
+            }
+        }
+    }
+    .join {
+        padding: 180px 0;
+        &__form-search {
+            margin-top: 90px;
+        }
+    }
 }
 
 
@@ -178,6 +194,9 @@
     .form-search {
         max-width: 400px;
         height: 54px;
+        &_big {
+            max-width: 470px;
+        }
     }
     .tools {
         padding-top: 50px;
@@ -260,6 +279,15 @@
             width: 30px;
         }
     }
+    .join {
+        padding: 100px 0;
+        &__subtitle {
+            margin-top: 20px;
+        }
+        &__form-search {
+            margin-top: 60px;
+        }
+    }
 }
 
 
@@ -336,8 +364,14 @@
     .form-search {
         max-width: 300px;
         height: 48px;
+        &_big {
+            max-width: 360px;
+        }
         &__input {
             padding: 21px 100px 21px 35px;
+            &_big {
+                padding: 21px 110px 21px 21px;
+            }
         }
         &__input::placeholder {
             font-size: 0.8rem;
@@ -439,6 +473,15 @@
         &__count {
             margin-top: 40px;
             width: 120px;
+        }
+    }
+    .join {
+        padding: 70px 0;
+        &__subtitle {
+            margin-top: 15px;
+        }
+        &__form-search {
+            margin-top: 40px;
         }
     }
 }
@@ -543,6 +586,23 @@
         }
         &__step {
             width: 25px;
+        }
+    }
+    .form-search {
+        &_big {
+            max-width: 280px;
+        }
+        &__input {
+            padding: 21px 110px 21px 18px;
+        }
+    }
+    .join {
+        padding: 40px 0;
+        &__subtitle {
+            margin-top: 10px;
+        }
+        &__form-search {
+            margin-top: 30px;
         }
     }
 }

@@ -2,6 +2,9 @@
     position: relative;
     max-width: 500px;
     height: 64px;
+    &_big {
+        max-width: 549px;
+    }
     &__input {
         background: #283036;
         border-radius: 15px;
@@ -10,6 +13,9 @@
         border: 1px solid #33393F;
         padding: 21px 150px 21px 55px;
         color: $mainSemiDark;
+        &_big {
+            padding: 21px 170px 21px 24px;
+        }
     }
     &__input::placeholder {
         font-weight: 400;
