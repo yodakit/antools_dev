@@ -1,0 +1,12 @@
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid rgba(255, 255, 255, 0.28);
+    border-right: 3px solid rgba(255, 255, 255, 0.28);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.arrow:hover {
+    transition: 0.3s;
+    border-color: $mainOrange;
+}

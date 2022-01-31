@@ -98,6 +98,12 @@
             width: 80%
         }
     }
+    .slider {
+        padding: 130px 20px 0 20px;
+        &__item {
+            width: 90%;
+        }
+    }
 }
 
 
@@ -221,6 +227,37 @@
         &__cards {
             width: 100%;
             justify-content: space-around;
+        }
+    }
+    .arrow {
+        width: 16px;
+        height: 16px;
+    }
+    .slider {
+        padding: 90px 20px 0 20px;
+        &__descr {
+            font-size: 0.7rem;
+        }
+        &__quoutes {
+            width: 70px;
+            bottom: 65%;
+            left: 54%;
+        }
+        &__img {
+            width: 50%;
+        }
+        &__title {
+            font-size: 1rem;
+        }
+        &__subtitle {
+            font-size: 0.8rem;
+        }
+        &__count {
+            margin-top: 50px;
+            max-width: 130px;
+        }
+        &__step {
+            width: 30px;
         }
     }
 }
@@ -385,6 +422,25 @@
             margin-bottom: 5px;
         }
     }
+    .slider {
+        padding: 40px 20px 0 20px;
+        &__descr {
+            font-size: 0.65rem;
+        }
+        &__member {
+            padding: 8px 15px;
+        }
+        &__title {
+            font-size: 0.9rem;
+        }
+        &__subtitle {
+            font-size: 0.7rem;
+        }
+        &__count {
+            margin-top: 40px;
+            width: 120px;
+        }
+    }
 }
 
 
@@ -458,6 +514,35 @@
         }
         &__cards {
             margin-top: 20px;
+        }
+    }
+    .slider {
+        padding: 20px 10px 0 10px;
+        &__item {
+            flex-direction: column;
+        }
+        &__img {
+            width: 75%;
+        }
+        &__descr {
+            width: 80%;
+            text-align: center;
+        }
+        &__member {
+            padding: 5px 10px;
+        }
+        &__title {
+            font-size: 0.8rem;
+        }
+        &__subtitle {
+            font-size: 0.6rem;
+        }
+        &__count {
+            margin-top: 20px;
+            max-width: 100px;
+        }
+        &__step {
+            width: 25px;
         }
     }
 }
