@@ -1,0 +1,49 @@
+.footer {
+    padding: 70px 0 98px 0;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__info {
+        flex-basis: 20%;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 54%;
+        margin-top: 5px;
+        margin-right: 100px;
+    }
+    &__subtitle {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $mainWhite;
+        margin-top: 25px;
+    }
+    &__descr {
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: $mainSemiDark;
+        margin-top: 21px;
+        line-height: 1.8em;
+    }
+    &__title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: $mainWhite;
+        margin-bottom: 10px;
+    }
+    &__link {
+        display: block;
+        margin-top: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $mainSemiDark;
+    }
+    &__link:hover {
+        color: $mainOrange;
+        transition: 0.3s;
+    }
+}

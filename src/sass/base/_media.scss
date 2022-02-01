@@ -120,6 +120,29 @@
             margin-top: 90px;
         }
     }
+    .footer {
+        padding: 70px 0;
+        &__info {
+            flex-basis: 25%;
+        }
+        &__content {
+            margin-right: 80px;
+        }
+        &__subtitle {
+            font-size: 0.9rem;
+        }
+        &__descr {
+            font-size: 0.8rem;
+        }
+        &__title {
+            font-size: 1.1rem;
+            margin-bottom: 7px;
+        }
+        &__link {
+            font-size: 0.9rem;
+            margin-top: 7px;
+        }
+    }
 }
 
 
@@ -286,6 +309,29 @@
         }
         &__form-search {
             margin-top: 60px;
+        }
+    }
+    .footer {
+        padding: 60px 0;
+        &__content {
+            margin-right: 20px;
+            flex-basis: 60%;
+        }
+        &__subtitle {
+            font-size: 0.8rem;
+            margin-top: 18px;
+        }
+        &__descr {
+            font-size: 0.7rem;
+            margin-top: 15px;
+        }
+        &__title {
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+        &__link {
+            font-size: 0.8rem;
+            margin-top: 6px;
         }
     }
 }
@@ -484,6 +530,30 @@
             margin-top: 40px;
         }
     }
+    .footer {
+        padding: 45px 0;
+        &__content {
+            margin-right: 0;
+            flex-basis: 68%;
+            margin-top: 10px;
+        }
+        &__subtitle {
+            font-size: 0.7rem;
+            margin-top: 14px;
+        }
+        &__descr {
+            font-size: 0.6rem;
+            margin-top: 10px;
+        }
+        &__title {
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+        }
+        &__link {
+            font-size: 0.7rem;
+            margin-top: 5px;
+        }
+    }
 }
 
 
@@ -603,6 +673,36 @@
         }
         &__form-search {
             margin-top: 30px;
+        }
+    }
+    .footer {
+        padding: 20px 0;
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-basis: 100%;
+        }
+        &__content {
+            margin-right: 0;
+            flex-basis: 100%;
+            margin-top: 20px;
+        }
+        &__subtitle {
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+        &__descr {
+            display: none;
+        }
+        &__title {
+            font-size: 0.75rem;
+        }
+        &__link {
+            font-size: 0.6rem;
         }
     }
 }
