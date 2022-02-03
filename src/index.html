@@ -18,17 +18,36 @@
                     <img src="img/logo.png" alt="logo" class="logo__icon">
                     <p class="logo__title">antools.</p>
                 </a>
-                <nav>
+                <nav class="menu__body">
                     <ul class="menu__links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Categories</a></li>
-                        <li><a href="#">My Collections</a></li>
-                        <li><a href="#">Blog</a></li>   
+                        <li><a href="#" class="menu__link">Home</a></li>
+                        <li>
+                            <div class="menu__spoiler">
+                                <a href="#" class="menu__link">Categories</a>
+                                <div class="arrow arrow__min"></div>
+                                <ul class="menu__spoiler-item">
+                                    <li>
+                                        <a href="#" class="menu__spoiler-link">1.Categories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu__spoiler-link">2.Categories</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu__spoiler-link">3.Categories</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="menu__link">My Collections</a></li>
+                        <li><a href="#" class="menu__link">Blog</a></li>   
                     </ul>
                 </nav>
                 <div class="entry">
                     <button class="btn btn_clear">Login</button>
                     <button class="btn">Sign Up</button>
+                </div>
+                <div class="burger">
+                    <span></span>
                 </div>
             </div>
             <div class="header__content">
@@ -324,5 +343,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

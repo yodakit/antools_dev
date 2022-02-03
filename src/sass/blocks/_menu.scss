@@ -1,4 +1,5 @@
 .menu {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,5 +21,36 @@
             transition: 0.3s;
             color: $mainOrange;
         }
+    }
+    &__links > li {
+        position: relative;
+    }
+    &__spoiler {
+        display: flex;
+        align-items: center;
+    }
+    &__spoiler-item {
+        padding: 10px;
+        margin: 0;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $secondDark;
+        border-radius: 15px;
+        width: 105%;
+        li {
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+        &_active {
+            display: block;
+        }
+    }
+    &__spoiler-link {
+        color: $mainWhite;
+    }
+    &__spoiler-link:hover {
+        color: $mainOrange;
     }
 }

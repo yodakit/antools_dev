@@ -8,6 +8,9 @@
         &__links li{
             font-size: 0.9rem;
         }
+        &__spoiler-item li {
+            font-size: 0.8rem;
+        }
     }
     .btn {
         font-size: 0.9rem;
@@ -76,7 +79,7 @@
         }
     }
     .card {
-        &_min {
+        &__min {
             width: 340px;
         }
     }
@@ -164,6 +167,9 @@
             li:not(:last-child) {
                 margin-right: 2.3em;
             }
+        }
+        &__spoiler-item li {
+            font-size: 0.7rem;
         }
     }
     .btn {
@@ -274,6 +280,10 @@
     .arrow {
         width: 16px;
         height: 16px;
+        &__min {
+            width: 9px;
+            height: 9px;
+        }
     }
     .slider {
         padding: 90px 20px 0 20px;
@@ -357,8 +367,38 @@
     }
     .menu {
         &__links {
-            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            li a{
+                color: $mainWhite;
+                font-size: 2rem;
+            }
         }
+        &__spoiler-item {
+            z-index: 5;
+            background-color:black;
+            li a{
+                font-size: 1.8rem;
+            }
+        }
+        &__body {
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            padding: 50px 30px 30px 30px;
+            background-color: rgba(0, 0, 0, 0.9);
+            transition: left 0.3s ease 0s;
+            overflow: auto;
+            &_active {
+                left: 0;
+            }    
+        }
+    }
+    .burger {
+        display: block;
     }
     .entry {
         display: none;

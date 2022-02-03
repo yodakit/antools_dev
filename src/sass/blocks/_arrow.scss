@@ -5,6 +5,18 @@
     border-right: 3px solid rgba(255, 255, 255, 0.28);
     border-radius: 2px;
     cursor: pointer;
+    &__min {
+        width: 9px;
+        height: 9px;
+        border-top: 2.5px solid $mainSemiDark;
+        border-right: 2.5px solid $mainSemiDark;
+        border-radius: 1px;
+        transform: rotate(135deg);
+        margin-left: 10px;
+        &_active {
+            transform: rotate(-45deg);
+        }
+    }
 }
 .arrow:hover {
     transition: 0.3s;
