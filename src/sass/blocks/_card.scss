@@ -49,16 +49,21 @@
     &__like {
         margin-right: 23px;
     }
-    &__like::before, &__file::before {
+    &__like:before, &__file:before {
         color: $mainSemiDark;
         cursor: pointer;
+    }
+    &__like._active::before {
+        color: #FD3B41;
+    }
+    &__file._active::before {
+        color: #FD3B41; 
     }
     &_min {
         width: 288px;
         padding: 28px 21px;
     }
 }
-
 .card:hover {
     background: rgba(40, 48, 54, 0.6);
     border: 1px solid #2E343A;
@@ -81,6 +86,12 @@
 }
 .card:hover .card__file::before {
     color: $mainSemiWhite;
+}
+.card:hover .card__like._active::before {
+    color: #FD3B41; 
+}
+.card:hover .card__file._active::before {
+    color: #FD3B41; 
 }
 .card:hover .btn__card {
     background-color: $mainOrange;

@@ -671,8 +671,12 @@
     }
     .slider {
         padding: 20px 10px 0 10px;
-        &__item {
+        &__wrapper {
+            position: relative;
+        }
+        &__slides {
             flex-direction: column;
+            justify-content: start;
         }
         &__img {
             width: 75%;
@@ -691,8 +695,11 @@
             font-size: 0.6rem;
         }
         &__count {
+            position: absolute;
             margin-top: 20px;
             max-width: 100px;
+            left: 50%;
+            transform: translate(-50%);
         }
         &__step {
             width: 25px;
