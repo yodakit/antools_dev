@@ -130,4 +130,67 @@ window.addEventListener('DOMContentLoaded', () => {
         sliderItem.style.height = `${margin + 40}px`;
         stepsCount.style.top = `${margin}px`;
     }
+
+    //load-more
+
+    const loadMoreBtn = document.querySelector('.btn_big'),
+          cardParent = document.querySelector('.tools__cards');
+
+
+    class Card {
+        constructor(src, alt, title, subtitle, descr,) {
+            this.src = src;
+            this.title = title;
+            this.subtitle = subtitle;
+            this.alt = alt;
+            this.descr = descr;
+        }
+
+        render() {
+            cardParent.insertAdjacentHTML("beforeEnd", `
+                <div class="tools__card card">
+                    <div class="card__header">
+                        <img src="${this.src}" alt="${this.alt}" class="card__img">
+                        <div class="card__name">
+                            <h3 class="card__title card__title_figma">${this.title}</h3>
+                            <h4 class="card__price">${this.subtitle}</h4>
+                        </div>
+                    </div>
+                    <p class="card__descr">${this.descr}</p>
+                    <div class="card__footer">
+                        <div class="card__icon">
+                            <div class="card__like icon-heart"></div>
+                            <div class="card__file icon-file"></div>
+                        </div>
+                        <button class="card__btn btn btn__card">Visit</button>
+                    </div>
+                </div>
+            `);  
+        }
+    }
+
+    loadMoreBtn.addEventListener('click', () => {
+        new Card(
+            "img/popular-tools/figma.svg",
+            "figma",
+            'FIGMA',
+            "Free",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ).render();
+        new Card(
+            "img/popular-tools/figma.svg",
+            "figma",
+            'FIGMA',
+            "Free",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ).render();
+        new Card(
+            "img/popular-tools/figma.svg",
+            "figma",
+            'FIGMA',
+            "Free",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ).render();
+    });
+
 });
